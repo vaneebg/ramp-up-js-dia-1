@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <script>
+        // alert("Javascript funcionando correctamente");
+        // creamos una alerta que muestra la anterior string
+
+        let variableSinValor;
+        console.log(variableSinValor);
+        let booleano1 = "true";
+        console.log(booleano1);
+        let booleano2 = "false";
+        console.log(booleano2);
+        const PI = 3.1416;
+        console.log(PI);
+        const TAU = 3.14 * 2;
+        console.log(TAU);
+        const miNombre = "Vanesa";
+        console.log(miNombre);
+        const miNumeroFav = 8;
+        console.log(miNumeroFav);
+        let ejemploBooleano = "true";
+        console.log(ejemploBooleano);
+        // console
+        console.log(miNombre.length);
+        console.log(typeof miNumeroFav);
+        let nombre = "Eulalio";
+        console.log(nombre);
+        let numberEulalio = 8;
+        console.log(numberEulalio);
+        console.log("Mi nombre es " + nombre + " y mi número fav es " + numberEulalio);
+        let frase = "Seré un crack en Javascript al terminar el bootcamp";
+        console.log(frase.toUpperCase());
+        let crack = "Hola soy un crack"
+        console.log(crack.substring(0, 5));
+        let concat = "Ejemplotemplate";
+
+        console.log(`Esto es un ${concat} `);
+        let template = "${concat}";
+        console.log(template);
+        console.log(PI.toFixed(2));
+
+        // ARRRAYS
+        const arrayVacio = [];
+        console.log("arrayVacio", arrayVacio);
+        const arrayNumeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        console.log("arrayNumeros", arrayNumeros);
+        const arrayNumeros2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        console.log(arrayNumeros2);
+        // let arrayNumeros2 = [];
+        // console.log("arrayNumeros2", arrayNumeros2);
+        // for (i = 0; i <= 15; i++) {
+
+        //     arrayNumeros2 = [i];
+        // }
+        // console.log("arrayNumeros2", arrayNumeros2);
+        const arrayNumerosPares = [0, 2, 4, 6, 8];
+        console.log("ArrayNumerosPares", arrayNumerosPares)
+        const arrayNumerosNeg = [0, -1, -2, -3, -4, -5, -6, -7, -8, -9];
+        console.log("arrayNumerosNeg", arrayNumerosNeg);
+        const holaMundo = ["Hola", "Mundo"];
+        console.log("holaMundo", holaMundo);
+        const loGuardoTodo = ["hola", "que", 23, 42.33, "tal"];
+        console.log("loGuardoTodo", loGuardoTodo);
+        const arrayDeArrays = [
+            [756, "nombre"],
+            [225, "apellido"],
+            [298, "direccion"]
+        ];
+        console.log("arrayDeArrays", arrayDeArrays);
+        console.log(arrayDeArrays.length);
+        loGuardoTodo.push("Hola");
+        console.log("loGuardoTodo:", loGuardoTodo);
+
+        console.log("arrayNumeros  mayor menor", arrayNumeros.sort((a, b) => b - a));
+        console.log("arrayNumeros2 ordenado menor mayor", arrayNumeros2.sort((a, b) => a - b));
+        console.log(loGuardoTodo[1]);
+        loGuardoTodo.push("Euralio");
+        console.log("loGuardoTodo con Euralio", loGuardoTodo);
+
+        // objetos
+        const coche = {
+            marca: "toyota",
+            modelo: "sport",
+            matricula: "2049KWS",
+
+        }
+        console.log("objeto coche", coche);
+        const casa = {
+            codPostal: 46017,
+            calle: "primero de mayo",
+            portal: 16,
+            piso: 7,
+        }
+        console.log("objeto casa", casa);
+        const FullStackDeveloper = {
+            lenguajes: ["javascript", "php"],
+            proyectos: ["mi página personal", "emmet", "carta"],
+        }
+        console.log("objeto FullStack", FullStackDeveloper);
+        const perro = {
+            nombre: "Simba",
+            raza: "westy",
+            color: "blanco",
+            edad: 3,
+        }
+        console.log("objeto perro", perro);
+        const noticia = {
+            titular: "Clase JS",
+            cuerpo: "Cuerpo de la noticia aquí",
+        }
+        console.log("objeto noticia", noticia);
+        const persona = {
+            nombre: "Vanesa",
+            apellidos: "beltrán",
+            edad: 27,
+        }
+        console.log("objeto persona", persona);
+        console.log(persona.nombre);
+        console.log(FullStackDeveloper.lenguajes[0]);
+        const portatil = {
+            marca: "toshiba",
+        }
+        console.log(portatil.marca);
+        const concierto = {
+            grupos: ["ECDL", "Amaral"],
+        }
+        console.log("objeto concierto, propiedad grupos", concierto.grupos);
+        const led = {
+            colores: ["rojo", "verde", "azul"],
+        }
+        console.log(led);
+        const arrayRGB = led.colores;
+        console.log("array RGB", arrayRGB);
+        const O_Error = {
+            código: "no se abre el enlace",
+        }
+        console.log("O_error, código", O_Error.código);
+        const Grupo = {
+            integrantes: ["integrante1", "integrante2", "integrante3"],
+        }
+        console.log(Grupo.integrantes[1]);
+        const Impresora = {
+            tinta: ["rojo", "verde", "azul"],
+        }
+        console.log("objeto Impresora", Impresora);
+        let nivelesTinta = Impresora.tinta;
+        console.log(nivelesTinta);
+        const movil = {
+            especificaciones: ["GPU", "camara"],
+        }
+        console.log(movil);
+        let especificaciones = movil.especificaciones;
+        console.log(especificaciones);
+        portatil.marca = "MSI";
+        console.log(portatil.marca);
+        concierto.grupos.push = "Guns N' Roses";
+        console.log(concierto.grupos);
+        concierto.fecha = 14;
+        console.log(concierto);
+        concierto.fecha = new Date();
+        console.log(concierto);
+        Grupo.integrantes.pop();
+        console.log(Grupo);
+        console.log("numero integrantes", Grupo.integrantes.length);
+    </script>
+
+
+</body>
+
+</html>
